@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      # 更新保活时间戳并提交推送，使仓库每周产生一次提交活动，
+      # 更新保活时间戳并提交推送，使仓库每 15 天产生一次提交活动，
       # 防止 GitHub 因仓库 60 天无活动而自动禁用定时 workflow
       - name: Update keep-alive timestamp
         run: |
